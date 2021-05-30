@@ -1,0 +1,27 @@
+.EmployeesList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.LeftWrapper {
+  height: 100vh;
+  width: 60%;
+  text-align: center;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .EmployeesList {
+    grid-template-columns: auto;
+    height: 45vh;
+  }
+
+  .LeftWrapper {
+    height: 55vh;
+    width: 100%;
+  }
+}
